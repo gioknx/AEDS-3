@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "bitMag.h"
+#include "kmp.h"
+#include "leitor.h"
+#include "lz77.h"
+
+
+int main(int argc, char *argv[]){
+	char* source = argv[1];
+	char* target = argv[2];
+
+	lz77_decompress(source,target);
+
+	return 0;
+
+}
